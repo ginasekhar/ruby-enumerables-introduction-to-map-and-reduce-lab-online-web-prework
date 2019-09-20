@@ -66,10 +66,10 @@ end
 def reduce_to_any_true(source_array)
   i = 0 # set up a i for the enumeration 
   while (i < source_array.length) do # a loop for each element in array
-   if (source_array[i] == false)
-    return false
+   if (!!source_array[i] == true)
+    return true
    end
     i += 1
   end
-  return true
+  return false
 end
