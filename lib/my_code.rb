@@ -41,7 +41,7 @@ def map_to_square(source_array)
   
 end
 
-def reduce_to_total(source_array, starting_point)
+def reduce_to_total(source_array, starting_point = 0)
   ret_value = starting_point
   i = 0 # set up a i for the enumeration 
   while i < source_array.length do # a loop for each element in array
